@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sakshamspc.swoosh.SkillActivity">
+    tools:context="com.example.sakshamspc.swoosh.Controller.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -60,13 +60,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/beginnerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onBeginnerClicked"
             android:text="@string/beginner"
             android:textColor="@android:color/white"
             android:textOff="@string/beginner"
@@ -74,13 +75,14 @@
             android:textSize="18sp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/expertSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onExpertClicked"
             android:text="@string/expert"
             android:textColor="@android:color/white"
             android:textOff="@string/expert"
@@ -89,7 +91,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/skillFinishBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -97,6 +99,7 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onSkillFinishClicked"
         android:text="@string/finish"
         android:textColor="@android:color/white"
         android:textSize="18sp"

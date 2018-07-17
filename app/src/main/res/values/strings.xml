@@ -15,5 +15,6 @@
     <string name="beginner">BEGINNER</string>
     <string name="expert">EXPERT</string>
     <string name="finish">FINISH</string>
+    <string name="finish_text">Looking for a Co-Ed Beginner League near you</string>
 
 </resources>

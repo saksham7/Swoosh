@@ -1,18 +1,18 @@
-package com.example.sakshamspc.swoosh
+package com.example.sakshamspc.swoosh.Controller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.sakshamspc.swoosh.R
 import kotlinx.android.synthetic.main.activity_welcome.*
 
-class WelcomeActivity :BaseActivity() {
+class WelcomeActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
         getStartedBtn.setOnClickListener {
-            val leagueIntent= Intent(this,LeagueActivity::class.java)
+            val leagueIntent= Intent(this, LeagueActivity::class.java)
             startActivity(leagueIntent)
         }
     }
