@@ -17,7 +17,7 @@ class LeagueActivity : BaseActivity(){
     }
 
     fun onMensClicked(view: View){
-        if(selectedLeague=="MENS"){
+        if(selectedLeague=="Mens"){
             mensLeagueBtn.isChecked=true
             womensLeagueBtn.isChecked = false
             coedLeagueBtn.isChecked = false
@@ -25,12 +25,12 @@ class LeagueActivity : BaseActivity(){
         }else {
             womensLeagueBtn.isChecked = false
             coedLeagueBtn.isChecked = false
-            selectedLeague = "MENS"
+            selectedLeague = "Mens"
         }
     }
 
     fun onWomensClicked(view: View){
-        if(selectedLeague=="WOMENS"){
+        if(selectedLeague=="Womens"){
             womensLeagueBtn.isChecked=true
             mensLeagueBtn.isChecked = false
             coedLeagueBtn.isChecked = false
@@ -39,13 +39,13 @@ class LeagueActivity : BaseActivity(){
         else {
             mensLeagueBtn.isChecked = false
             coedLeagueBtn.isChecked = false
-            selectedLeague = "WOMENS"
+            selectedLeague = "Womens"
         }
 
     }
 
     fun onCoedClicked(view: View){
-        if(selectedLeague=="CO-ED"){
+        if(selectedLeague=="Co-Ed"){
             coedLeagueBtn.isChecked=true
             mensLeagueBtn.isChecked = false
             womensLeagueBtn.isChecked = false
@@ -54,7 +54,7 @@ class LeagueActivity : BaseActivity(){
         else {
             mensLeagueBtn.isChecked = false
             womensLeagueBtn.isChecked = false
-            selectedLeague = "CO-ED"
+            selectedLeague = "Co-Ed"
         }
     }
     fun leagueNextClicked(view:View){
