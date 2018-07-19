@@ -15,7 +15,7 @@ class LeagueActivity : BaseActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
     }
-
+//disabling the toggle buttons other than which is selected
     fun onMensClicked(view: View){
         if(selectedLeague=="Mens"){
             mensLeagueBtn.isChecked=true
@@ -57,6 +57,7 @@ class LeagueActivity : BaseActivity(){
             selectedLeague = "Co-Ed"
         }
     }
+    //When the Next button is pressed data is passed to SkillActivity with Activity Change
     fun leagueNextClicked(view:View){
         if(selectedLeague !="") {
             val skillActivity = Intent(this, SkillActivity::class.java)
